@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#aeb5e6">
+<title>Circular Portfolio Animation</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="topbar"><h1>Circular Portfolio Animation</h1><p>Tap the page or use the arrows to turn the portfolio</p></header>
+<main class="scene">
+  <div class="book" id="book" aria-label="Interactive circular portfolio book">
+    <section class="spread spread-one" id="spread-one">
+      <article class="half left-half">
+        <h2>About Me</h2>
+        <p>I build clean, highly interactive, and circular digital experiences using modern web technologies.</p>
+        <div class="tags"><span>React</span><span>Three.js</span><span>UI/UX</span><span>CSS3</span></div>
+      </article>
+      <article class="half right-half">
+        <h2>Projects</h2>
+        <div class="project-card"><i></i><div><b>Eco-Dashboard</b><small>Data visualization UI</small></div></div>
+        <div class="project-card"><i></i><div><b>GreenStore</b><small>E-commerce platform</small></div></div>
+      </article>
+    </section>
+    <section class="spread spread-two" id="spread-two" aria-hidden="true">
+      <article class="half left-half">
+        <h2>Experience</h2>
+        <p><b>Frontend Developer</b><br>Building modern, responsive web interfaces.</p>
+        <p><b>UI Designer</b><br>Creating intuitive digital experiences.</p>
+      </article>
+      <article class="half right-half">
+        <h2>Let's Talk</h2>
+        <p>I'm currently available for freelance projects and full-time opportunities.</p>
+        <a class="email-btn" href="mailto:hello@example.com">Email Me</a>
+      </article>
+    </section>
+    <section class="spread spread-three" id="spread-three" aria-hidden="true">
+      <article class="half left-half thank">
+        <div class="avatar small">NM</div><h2>Thank You</h2><p>For exploring my portfolio.</p>
+      </article>
+      <article class="half right-half thank">
+        <div class="avatar small">NM</div><h2>Thank You</h2><p>Let's create something great together.</p>
+      </article>
+    </section>
+    <button class="cover" id="cover" type="button" aria-label="Open portfolio cover">
+      <span class="cover-content">
+        <span class="avatar">NM</span>
+        <strong>Nilesh M</strong>
+        <small>Frontend Engineer</small>
+        <span class="open-pill">Tap to open</span>
+      </span>
+    </button>
+  </div>
+</main>
+<nav class="controls" aria-label="Portfolio page controls">
+  <button id="prev" type="button" aria-label="Previous page">‹</button>
+  <span id="page-status">Cover · 1 / 4</span>
+  <button id="next" type="button" aria-label="Next page">›</button>
+</nav>
+<script src="script.js"></script>
+</body>
+</html>
